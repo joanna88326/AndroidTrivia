@@ -33,8 +33,12 @@ class GameWonFragment : Fragment() {
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener(
+            // TODO (10) Replace action ID with actionGameWonFragmentToGameFragment
+            // From GameWonFragmentDirections
             Navigation.createNavigateOnClickListener(R.id.action_gameWonFragment_to_gameFragment)
         )
+        // TODO (08) Add and show toast to get the GameWonFragmentArgs from the arguments Bundle
+        // "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}"
         return binding.root
     }
 }
