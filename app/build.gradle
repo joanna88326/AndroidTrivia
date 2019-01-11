@@ -59,4 +59,5 @@ dependencies {
 
     // Material Design
     implementation "com.google.android.material:material:$version_material"
+    // TODO (01) Add the dependencies for navigation fragment ktx and navigation UI ktx
 }
